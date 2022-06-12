@@ -9,7 +9,7 @@ public class Fish : MonoBehaviour
     public float ySpeed = 1.0f;
     private Rigidbody2D rb;
     private Vector2 screenBounds;
-    SpriteRenderer thing2;
+
 
     // Start is called before the first frame update
     void Start()
@@ -32,18 +32,16 @@ public class Fish : MonoBehaviour
         
         if(transform.position.x < -screenBounds.x)
         {
-            Debug.Log(thing2.flipX);
             rb.velocity = new Vector2(xSpeed,ySpeed);
-            Debug.Log(thing2.flipX);
+
 
         }
         else if(transform.position.x > screenBounds.x)
         {
-            Debug.Log(thing2.flipX);
             rb.velocity = new Vector2(-xSpeed,ySpeed);
-            Debug.Log(thing2.flipX);
+
         }
-        else if(transform.position.y > screenBounds.y)
+        else if(transform.position.y > screenBounds.y + (.5 * screenBounds.y))
         {
             Destroy(this.gameObject);
         }

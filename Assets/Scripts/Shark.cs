@@ -28,7 +28,7 @@ public class Shark : MonoBehaviour
     void Update()
     {
        this.transform.position = Vector2.MoveTowards(this.transform.position, targetPosition, speed * Time.deltaTime);
-                
+       
     }
 
     

@@ -5,7 +5,7 @@ using UnityEngine;
 public class direction : MonoBehaviour
 {
     float xCurr;
-    float Speed;
+    float speed;
     SpriteRenderer al;
 
     // Start is called before the first frame update
@@ -18,14 +18,15 @@ public class direction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Speed = transform.position.x-xCurr;
+        speed = transform.position.x-xCurr;
         xCurr = transform.position.x;
 
-        if (Speed > 0) // Moving to right
+        if (speed > 0) // Moving to right
         {
+
             al.flipX=true;
         }
-        else 
+        else if(speed < 0)
         {
             al.flipX=false;
         }
