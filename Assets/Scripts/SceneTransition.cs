@@ -7,6 +7,7 @@ public class SceneTransition : MonoBehaviour
 {
     public void MoveToScene(int sceneID)
     {
+
         SceneManager.LoadScene(sceneID);
     }
 
