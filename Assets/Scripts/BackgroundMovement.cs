@@ -12,7 +12,7 @@ public class BackgroundMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Debug.Log(this.gameObject.transform.position);
         this.transform.position = new Vector2(this.transform.position.x, this.transform.position.y + mapSpeed * 1 / 4 * SharedResources.anchorLevel);
