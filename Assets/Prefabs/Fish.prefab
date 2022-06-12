@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5300969290058110073}
   - component: {fileID: 5300969290058110074}
   - component: {fileID: 5300969290058110075}
+  - component: {fileID: -1689232473148653851}
   m_Layer: 0
   m_Name: Fish
   m_TagString: Untagged
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: e5da66fa63839274dbffb877e43e888b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -139,6 +140,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xSpeed: 5
   ySpeed: 1
+--- !u!114 &-1689232473148653851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5300969290058110071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d59b9196f745c084386825cc04ad0a01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5300969290558295526
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,6 +162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5300969290558295525}
   - component: {fileID: 5300969290558295524}
+  - component: {fileID: 4410033579771200564}
   m_Layer: 0
   m_Name: Red Fish
   m_TagString: Untagged
@@ -211,7 +225,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 41eba46d1e9ccc546ab77fcb74be6e2f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -223,3 +237,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4410033579771200564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5300969290558295526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54b0faf5d42b7e848894e8f012059ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

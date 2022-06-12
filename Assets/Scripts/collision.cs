@@ -16,7 +16,14 @@ public class collision : MonoBehaviour
             Debug.Log("Hit detected for harpoon");
             Destroy(other.gameObject);
             Destroy(this.gameObject);
-
+            if (this.gameObject.CompareTag("Fishy"))
+            {
+                SharedResources.gold += 5;
+            }
+            else if (this.gameObject.CompareTag("Sami"))
+            {
+                SharedResources.gold += 10;
+            }
         }
     }
 

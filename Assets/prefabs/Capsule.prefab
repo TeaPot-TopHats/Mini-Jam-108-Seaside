@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 1345949604823878419}
   - component: {fileID: 1247936348018992263}
   - component: {fileID: 6420298766990729685}
+  - component: {fileID: 5156833101058397613}
+  - component: {fileID: -8781680688391896414}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Harpoon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,3 +108,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5156833101058397613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6639296623845069878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f1f0e934ed0b6048a8db88257ac639f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!70 &-8781680688391896414
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6639296623845069878}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0031943086, y: -0.0064479713}
+  m_Size: {x: 0.92548084, y: 0.41966385}
+  m_Direction: 1
