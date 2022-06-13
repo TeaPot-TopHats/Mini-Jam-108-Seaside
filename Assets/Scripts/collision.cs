@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class collision : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class collision : MonoBehaviour
         if (other.gameObject.CompareTag("Player")){
             Debug.Log("Hit detected for player");
             Destroy(other.gameObject);
+            SceneManager.LoadScene("GameOverScene");
         }
         else if (other.gameObject.CompareTag("Harpoon"))
         {
