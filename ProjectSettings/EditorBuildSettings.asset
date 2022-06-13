@@ -14,10 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: af8f30272ac9eca488bdc1e371c72ba8
-  - enabled: 1
-    path: Assets/Scenes/GameZone.unity
+  - enabled: 0
+    path: Assets/Scenes/GameZoneOld.unity
     guid: 06b24273a3859de4393f72b6377f5b96
   - enabled: 1
-    path: Assets/Scenes/GameZone2.unity
+    path: Assets/Scenes/GameZone.unity
     guid: e5351185c6cf7994b9db9489a0d8a3fd
   m_configObjects: {}
