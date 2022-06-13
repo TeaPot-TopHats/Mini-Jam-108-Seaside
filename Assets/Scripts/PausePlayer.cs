@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PausePlayer : MonoBehaviour
+public class PlayerStats : MonoBehaviour
 {
-
-    public static bool GameIsPaused = false;
-    public GameObject pausePlayer;
+    private void Start()
+    {
+        
+    }
 
 
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BackgroundMovement : MonoBehaviour
 {
@@ -28,6 +29,11 @@ public class BackgroundMovement : MonoBehaviour
         {
 
             mapSpeed = 0;
+            Debug.Log(true);
+            SceneManager.LoadScene("GameOverScene");
+            Debug.Log(true);
+            //SharedResources.IsGameOver = true;
+            
         }
 
     }

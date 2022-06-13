@@ -7,8 +7,9 @@ public class SceneTransition : MonoBehaviour
 {
     public void MoveToScene(int sceneID)
     {
-
+        //SharedResources.IsGameOver = false;
         SceneManager.LoadScene(sceneID);
+        
     }
 
     // Start is called before the first frame update

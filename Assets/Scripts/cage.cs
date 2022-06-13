@@ -10,6 +10,7 @@ public class cage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         SharedResources.count = false;
         targetPosition = target.transform.position;
     }

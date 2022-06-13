@@ -281,7 +281,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Weapon Reload
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -2444,7 +2444,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &607921493
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4966,6 +4966,7 @@ GameObject:
   - component: {fileID: 1461333687}
   - component: {fileID: 1461333686}
   - component: {fileID: 1461333685}
+  - component: {fileID: 1461333688}
   m_Layer: 5
   m_Name: AnchorUpgradeButton
   m_TagString: Untagged
@@ -5037,7 +5038,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1461333686}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1461333688}
+        m_TargetAssemblyTypeName: SetUpgrades, Assembly-CSharp
+        m_MethodName: UpgradeAnchor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1461333686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5076,6 +5089,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461333683}
   m_CullTransparentMesh: 1
+--- !u!114 &1461333688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461333683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcab01e4bb70fa04cb8978dbd4880b94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1526773326
 GameObject:
   m_ObjectHideFlags: 0
@@ -5294,6 +5319,8 @@ GameObject:
   - component: {fileID: 1589085515}
   - component: {fileID: 1589085514}
   - component: {fileID: 1589085518}
+  - component: {fileID: 1589085519}
+  - component: {fileID: 1589085520}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5396,6 +5423,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 626ea5200ee310c4b8aa40f6bcfd9964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1589085519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589085513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcab01e4bb70fa04cb8978dbd4880b94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1589085520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589085513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d00e68f81d2293428f10abb1bf1973f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsText: {fileID: 1849690767}
 --- !u!1 &1608883408
 GameObject:
   m_ObjectHideFlags: 0
@@ -6200,6 +6252,86 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849530069}
   m_CullTransparentMesh: 1
+--- !u!1 &1849690765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1849690766}
+  - component: {fileID: 1849690768}
+  - component: {fileID: 1849690767}
+  m_Layer: 5
+  m_Name: ScoreText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1849690766
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849690765}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2085548319}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 502.25}
+  m_SizeDelta: {x: 231.51, y: 75.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1849690767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849690765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.827451, b: 0.14509805, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8537abe37b27f7d488ea694bf572cf74, type: 3}
+    m_FontSize: 18
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 10 SHEELS
+--- !u!222 &1849690768
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849690765}
+  m_CullTransparentMesh: 1
 --- !u!1 &1855573986
 GameObject:
   m_ObjectHideFlags: 0
@@ -6236,7 +6368,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000015258789, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1855573988
@@ -6274,7 +6406,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Weapon Speed
+  m_text: Spear Speed & Reload
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -7234,6 +7366,7 @@ RectTransform:
   - {fileID: 2002521454}
   - {fileID: 378574698}
   - {fileID: 1228126915}
+  - {fileID: 1849690766}
   m_Father: {fileID: 1589085517}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7292,6 +7425,7 @@ GameObject:
   - component: {fileID: 2090874507}
   - component: {fileID: 2090874506}
   - component: {fileID: 2090874505}
+  - component: {fileID: 2090874508}
   m_Layer: 5
   m_Name: WeaponSpeedUpgradeButton
   m_TagString: Untagged
@@ -7317,8 +7451,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 201.83, y: 56.832}
-  m_SizeDelta: {x: 222.71, y: 113.6647}
+  m_AnchoredPosition: {x: 0.0000076294, y: 56.834}
+  m_SizeDelta: {x: 431.53, y: 113.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2090874505
 MonoBehaviour:
@@ -7363,7 +7497,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2090874506}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2090874508}
+        m_TargetAssemblyTypeName: SetUpgrades, Assembly-CSharp
+        m_MethodName: UpgradeHarpoon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2090874506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7402,6 +7548,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090874503}
   m_CullTransparentMesh: 1
+--- !u!114 &2090874508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090874503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcab01e4bb70fa04cb8978dbd4880b94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2121103716
 GameObject:
   m_ObjectHideFlags: 0
