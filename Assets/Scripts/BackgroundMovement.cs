@@ -8,11 +8,7 @@ public class BackgroundMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-<<<<<<< HEAD
-        Debug.Log(mapSpeed);
-=======
 
->>>>>>> 3f853ea034d428a8e55b338515f95333007b6b85
     }
 
     // Update is called once per frame
