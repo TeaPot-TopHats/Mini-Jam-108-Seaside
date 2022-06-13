@@ -20,7 +20,7 @@ public class MouseClick : MonoBehaviour
     void Start()
     {
         Cursor.visible = false;
-        SharedResources.harpoonLevel = 1; //temp, remove soon!!!!!!!!
+
     }
 
     // Update is called once per frame
@@ -33,21 +33,20 @@ public class MouseClick : MonoBehaviour
         Vector3 difference = point - player.transform.position;
         float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         player.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
-        if (timePassed > reloadSpeed * (1/SharedResources.harpoonLevel))
+        Debug.Log("time passed: " + timePassed + " and reload speed: " + reloadSpeed);
+        if (Input.GetMouseButtonDown(0) && timePassed > reloadSpeed * (1/SharedResources.harpoonLevel))
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                float distance = difference.magnitude;
-                Vector2 direction = difference / distance;
-                direction.Normalize();
-                FireBullet(direction, rotationZ);
-                timePassed = 0;
-            } 
+            Debug.Log("Clicked");
+            float distance = difference.magnitude;
+            Vector2 direction = difference / distance;
+            direction.Normalize();
+            FireBullet(direction, rotationZ);
+            Debug.Log("worked");
+            timePassed = 0;
         }
-        else
-        {
-            timePassed += Time.deltaTime;
-        }
+
+        timePassed += Time.deltaTime;
+
 
         
 

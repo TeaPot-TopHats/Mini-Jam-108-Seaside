@@ -8,18 +8,17 @@ public class BackgroundMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SharedResources.anchorLevel = 1;
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        Debug.Log(this.gameObject.transform.position);
         this.transform.position = new Vector2(this.transform.position.x, this.transform.position.y + mapSpeed * 1 / 4 * SharedResources.anchorLevel);
         if(SharedResources.count == true)
         {
             SharedResources.depth = this.transform.position.y;
-            Debug.Log(SharedResources.depth);
+
         }
     }
 
@@ -27,7 +26,7 @@ public class BackgroundMovement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Player reached bottom");
+
             mapSpeed = 0;
         }
 

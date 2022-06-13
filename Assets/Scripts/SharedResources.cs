@@ -10,6 +10,11 @@ public static class SharedResources
     public static int anchorLevel { get; set; }
     public static bool count { get; set; }
 
+    static SharedResources()
+    {
+        harpoonLevel = 1;
+        anchorLevel = 1;
+    }
 public static string UpgradeHarpoon()
     {
         if (harpoonLevel < 4)
