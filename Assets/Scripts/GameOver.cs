@@ -10,6 +10,6 @@ public class GameOver : MonoBehaviour
 
     public void ShowGameOver()
     {
-        SetScore.Setup(maxScore);
+       
     }
 }

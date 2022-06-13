@@ -12,7 +12,6 @@ public class collision : MonoBehaviour
         if (other.gameObject.CompareTag("Player")){
             Debug.Log("Hit detected for player");
             Destroy(other.gameObject);
-           // SharedResources.IsGameOver = true;
             Debug.Log(true);
             SceneManager.LoadScene("GameOverScene");
             Debug.Log(true);
@@ -24,11 +23,11 @@ public class collision : MonoBehaviour
             Destroy(this.gameObject);
             if (this.gameObject.CompareTag("Fishy"))
             {
-                SharedResources.gold += 5;
+                SetScore.instance.AddPoints();
             }
             else if (this.gameObject.CompareTag("Sami"))
             {
-                SharedResources.gold += 10;
+                SetScore.instance.AddPoints2();
             }
         }
     }

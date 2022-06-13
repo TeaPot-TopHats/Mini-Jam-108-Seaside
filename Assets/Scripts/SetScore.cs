@@ -6,19 +6,33 @@ using UnityEngine.SceneManagement;
 
 public class SetScore : MonoBehaviour
 {
-
+    public static SetScore instance;
     public Text pointsText;
+    int score = 0;
 
-    public void Setup(int score)
+    private void Awake()
     {
-        if (SharedResources.IsGameOver) { 
-
-        gameObject.SetActive(true);
-        pointsText.text = score.ToString() + "SHELLS";
-        }
+        instance = this;
+    }
+    private void Start()
+    {
+        pointsText.text = score.ToString() + "SHEELS";
     }
 
-    
-   
+    public void AddPoints()
+    {
+        score += 5;
+        pointsText.text = score.ToString() + "SHEELS";
+
+        PlayerPrefs.SetInt("SHEELS", score);
+    }
+    public void AddPoints2()
+    {
+        score += 10;
+        pointsText.text = score.ToString() + "SHEELS";
+        PlayerPrefs.SetInt("SHEELS", score);
+    }
+
+
 
 }
