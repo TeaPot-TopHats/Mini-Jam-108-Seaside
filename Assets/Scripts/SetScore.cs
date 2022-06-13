@@ -11,8 +11,11 @@ public class SetScore : MonoBehaviour
 
     public void Setup(int score)
     {
+        if (SharedResources.IsGameOver) { 
+
         gameObject.SetActive(true);
         pointsText.text = score.ToString() + "SHELLS";
+        }
     }
 
     

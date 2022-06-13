@@ -4419,6 +4419,7 @@ GameObject:
   - component: {fileID: 1308837511}
   - component: {fileID: 1308837510}
   - component: {fileID: 1308837509}
+  - component: {fileID: 1308837512}
   m_Layer: 5
   m_Name: UICanvas
   m_TagString: Untagged
@@ -4548,6 +4549,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 541092653}
+--- !u!114 &1308837512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308837504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d00e68f81d2293428f10abb1bf1973f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsText: {fileID: 640473776}
 --- !u!1 &1323130427
 GameObject:
   m_ObjectHideFlags: 0
@@ -5634,10 +5648,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1564879641}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d00e68f81d2293428f10abb1bf1973f, type: 3}
+  m_Script: {fileID: 11500000, guid: 4de04eb5b0662054e9daa1f64fb0194d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsText: {fileID: 640473776}
+  SetScore: {fileID: 1308837512}
 --- !u!1 &1592504017
 GameObject:
   m_ObjectHideFlags: 0

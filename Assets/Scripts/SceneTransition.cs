@@ -7,7 +7,7 @@ public class SceneTransition : MonoBehaviour
 {
     public void MoveToScene(int sceneID)
     {
-        SharedResources.IsGameOver = false;
+        //SharedResources.IsGameOver = false;
         SceneManager.LoadScene(sceneID);
         
     }
