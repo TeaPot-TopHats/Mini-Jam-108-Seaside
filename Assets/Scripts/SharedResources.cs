@@ -4,11 +4,14 @@ using UnityEngine;
 
 public static class SharedResources
 {
+    public static bool IsGameOver { get; set; }
     public static int gold { get; set; }
     public static float depth { get; set; }
     public static int harpoonLevel { get; set; }
     public static int anchorLevel { get; set; }
     public static bool count { get; set; }
+
+   
 
 public static string UpgradeHarpoon()
     {
@@ -39,5 +42,7 @@ public static string UpgradeHarpoon()
         }
         return "Already Upgraded";
     }
+
+   
 
 }

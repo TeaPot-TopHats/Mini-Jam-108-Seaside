@@ -8,7 +8,7 @@ public class BackgroundMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SharedResources.anchorLevel = 1;
+        Debug.Log(mapSpeed);
     }
 
     // Update is called once per frame
@@ -29,6 +29,7 @@ public class BackgroundMovement : MonoBehaviour
         {
             Debug.Log("Player reached bottom");
             mapSpeed = 0;
+            SharedResources.IsGameOver = true;
         }
 
     }
