@@ -2509,7 +2509,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 607921495}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1589085519}
+        m_TargetAssemblyTypeName: SetUpgrades, Assembly-CSharp
+        m_MethodName: UpgradeHarpoon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &607921495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5039,7 +5051,11 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+<<<<<<< HEAD
       - m_Target: {fileID: 1461333688}
+=======
+      - m_Target: {fileID: 1589085519}
+>>>>>>> 105561a8e6b6baaf2780f48e6e3b3e05132d73fa
         m_TargetAssemblyTypeName: SetUpgrades, Assembly-CSharp
         m_MethodName: UpgradeAnchor
         m_Mode: 1
@@ -5320,7 +5336,10 @@ GameObject:
   - component: {fileID: 1589085514}
   - component: {fileID: 1589085518}
   - component: {fileID: 1589085519}
+<<<<<<< HEAD
   - component: {fileID: 1589085520}
+=======
+>>>>>>> 105561a8e6b6baaf2780f48e6e3b3e05132d73fa
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5432,6 +5451,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1589085513}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: bcab01e4bb70fa04cb8978dbd4880b94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -5448,6 +5468,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsText: {fileID: 1849690767}
+=======
+  m_Script: {fileID: 11500000, guid: 55ac1ba00304c9a4cba3f28c686f08de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> 105561a8e6b6baaf2780f48e6e3b3e05132d73fa
 --- !u!1 &1608883408
 GameObject:
   m_ObjectHideFlags: 0
@@ -7498,7 +7523,11 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+<<<<<<< HEAD
       - m_Target: {fileID: 2090874508}
+=======
+      - m_Target: {fileID: 1589085519}
+>>>>>>> 105561a8e6b6baaf2780f48e6e3b3e05132d73fa
         m_TargetAssemblyTypeName: SetUpgrades, Assembly-CSharp
         m_MethodName: UpgradeHarpoon
         m_Mode: 1

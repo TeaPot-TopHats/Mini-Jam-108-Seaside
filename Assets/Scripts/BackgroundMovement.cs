@@ -29,11 +29,7 @@ public class BackgroundMovement : MonoBehaviour
         {
 
             mapSpeed = 0;
-            Debug.Log(true);
             SceneManager.LoadScene("GameOverScene");
-            Debug.Log(true);
-            //SharedResources.IsGameOver = true;
-            
         }
 
     }

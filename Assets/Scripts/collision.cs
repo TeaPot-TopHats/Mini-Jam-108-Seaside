@@ -12,9 +12,7 @@ public class collision : MonoBehaviour
         if (other.gameObject.CompareTag("Player")){
             Debug.Log("Hit detected for player");
             Destroy(other.gameObject);
-            Debug.Log(true);
             SceneManager.LoadScene("GameOverScene");
-            Debug.Log(true);
         }
         else if (other.gameObject.CompareTag("Harpoon"))
         {
